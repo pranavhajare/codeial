@@ -10,10 +10,15 @@
   "keywords": [
     "social"
   ],
-  "author": "Pranav",
+  "author": "CodingNinjas",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.4",
     "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "mongoose": "^5.4.6",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
   }
 }
