@@ -1,5 +1,3 @@
-
-
 const User = require('../models/user');
 
 // let's keep it same as before
