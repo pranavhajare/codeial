@@ -25,7 +25,7 @@
 </ul>
 
 </header> -->
-
+<!-- 
 <header id="layout-header">
     <nav>
         <div class="mini-logo">
@@ -60,4 +60,20 @@
  
 
 
+</header> -->
+
+<header>
+    <div id="left"><a href="/">codeial</a></div>
+    <div id="right">
+        <%if(locals.user) { %>
+            <a href="/users/profile/<%= user.id %>"><%= user.name %></a>
+            |
+            <a href="/users/sign-out">Sign Out</a>
+        <% } else{ %>
+            <a href="/users/sign-in">Sign In</a>
+            |
+            <a href="/users/sign-up">Sign Up</a>
+        <% } %>    
+    </div>
+    
 </header>

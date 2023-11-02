@@ -1,4 +1,4 @@
-<footer id="layout-footer">
+<!-- <footer id="layout-footer">
     <div>
         <p>
             &#169; Coding Ninjas. All Rights Reserved
@@ -17,4 +17,32 @@
             </ul>
         </nav>
     </div>
+</footer> -->
+
+<footer>
+  <div id="left">
+    <div>
+      <p>© Pranav Hajare</p>
+    </div>
+
+    <div>
+      <p>All Rights Reserved</p>
+    </div>
+  </div>
+  <div id="right">
+    
+      <div>
+        <a href="/">Home</a>
+      </div>
+
+      <div>
+        <%if(locals.user) { %>
+      <a href="/users/profile/<%= user.id %>">Profile</a>
+      <% } else { %>
+      <a href="/users/sign-in">Sign In</a>
+      <% } %>
+      </div>
+      
+    
+  </div>
 </footer>

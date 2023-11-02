@@ -42,4 +42,9 @@ router.get(
   usersController.createSession
 );
 
+router.get("/reset-password", usersController.resetPassword);
+router.post("/send-reset-pass-mail", usersController.resetPassMail);
+router.get("/reset-password/:accessToken", usersController.setPassword);
+router.post("/update-password/:accessToken", usersController.updatePassword);
+
 module.exports = router;
